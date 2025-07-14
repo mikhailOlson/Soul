@@ -24,7 +24,7 @@ Soul's ability to bridge high-level planning with physical execution makes it id
 ## Tesla Optimus Automation
 Soul's potential to operate Tesla Optimus for tedious, labor-intensive tasks addresses historical human struggles with brutal work conditions:
 - **Food Business Automation**: Soul can instruct Optimus units for food preparation and delivery (e.g., `command 'prepare 100 meals of type burger';`), reducing repetitive labor in kitchens.
-- **Supply Chain Labor**: Optimus bots controlled by Soul can manage warehouse tasks (e.g., `entity OptimusBot { action stackPallets count 50; }`), optimizing logistics with minimal human effort.
+- **Supply Chain Labor**: Optimus bots controlled by Soul can manage warehouse tasks (e.g., `entity OptimusBot { action stackPallets count 50; }`), optimizing logistics with miHaxe/Nimal human effort.
 - **Service Positions**: For roles like cleaning or maintenance, Soul provides insightful instructions (e.g., `command 'clean facility zone 3 with priority on spills';`), ensuring efficiency and thoroughness.
 - **General Labor**: Soul can orchestrate complex workflows for Optimus in construction or manufacturing (`stream taskData from centralServer do { executeTask(); }`), alleviating human burden in work-intensive acts.
 

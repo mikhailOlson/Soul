@@ -16,7 +16,7 @@ From simple automation scripts to mission-critical aerospace systems, Soul bridg
 - **IoT & Robotics**: Direct hardware control through conversational commands
 - **Industrial Systems**: Business process automation with natural language workflows  
 - **Embedded Systems**: Memory-safe, real-time control for medical devices and automotive systems
-- **Enterprise Applications**: Multi-language code generation (Nim, Rust, C#, JavaScript) from unified `.soul` specifications
+- **Enterprise Applications**: Multi-language code generation (Haxe/Nim, Rust, C#, JavaScript) from unified `.soul` specifications
 
 ## 🛡️ **Enterprise-Grade Safety & Verification**
 - **Formal Verification**: Mathematical proofs ensure code correctness for safety-critical applications
@@ -96,7 +96,7 @@ This means that one word can lead to several Vortex Flux Machines inferences tha
 
 At the word level, sentence level and paragraph level, the Vortex Flux Machines will generate instructions.
 
-The Vortex exports instructions in a JSON file to then process the JSON file into Nim code with a pretrained AI model that generates Nim code, opting for the instruction set that matches the most with the context.
+The Vortex exports instructions in a JSON file to then process the JSON file into Haxe/Nim code with a pretrained AI model that generates Haxe/Nim code, opting for the instruction set that matches the most with the context.
 
 Any error is feedback / disruption in the system and will be debugged automatically until the word is successfully processed to executed code.
 
@@ -106,25 +106,25 @@ Depending on the Vortex Flux Machines, these models are trained on which Model b
 
 It will actually choose the model that best matches the context, tool requirement and desired output.
 
-The AI's job here is to take the JSON file, parse it up and designate API calls with relevant prompts to generate Nim code.
+The AI's job here is to take the JSON file, parse it up and designate API calls with relevant prompts to generate Haxe/Nim code.
 
 **Code**
-Soul is based on Nim, which is a language that compiles multiple languages using a singular syntax.
+Soul is based on Haxe/Nim, which is a language that compiles multiple languages using a singular syntax.
 
-Once the JSON file is parsed, prompted and returns the API calls with code, it is then consolidated and saved in the same .soul file directory as a .nim file.
+Once the JSON file is parsed, prompted and returns the API calls with code, it is then consolidated and saved in the same .soul file directory as a .Haxe/Nim file.
 
 **Compile**
 
-Soul uses Ahead-of-time compilation to ensure that the code is compiled into an executable .nim file and processed by the IDE when ran, built or served.
+Soul uses Ahead-of-time compilation to ensure that the code is compiled into an executable .Haxe/Nim file and processed by the IDE when ran, built or served.
 
-Soul only compiles the .nim file when it is ran, built or served to save costs.
+Soul only compiles the .Haxe/Nim file when it is ran, built or served to save costs.
 
 **Execute**
 Since .soul leverages ease of use and simplicity, it takes a while to return completed code.
 
-However, once the .nim file is compiled, it runs instantly.
+However, once the .Haxe/Nim file is compiled, it runs instantly.
 
-Any changes to the .soul file will require a recompilation of the .nim file.
+Any changes to the .soul file will require a recompilation of the .Haxe/Nim file.
 
 🧠 **Language Design & Syntax**
 
@@ -204,7 +204,7 @@ Tool support for:
 - Stream: `|` for parallel processing, `&` for merging streams.
 
 ## Additional Features
-- Real-time error minimization.
+- Real-time error miHaxe/Nimization.
 - Hardware Abstraction Layer (HAL) for portability.
 - Concurrency for time-critical tasks.
 - MindSpace API integration for prototyping.

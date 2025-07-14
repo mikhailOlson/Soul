@@ -138,7 +138,7 @@ aspect Logger {
 1. **Use AOP for True Cross-Cutting Concerns** - Don't overuse for regular functionality
 2. **Keep Aspects Simple** - Complex logic should remain in regular classes
 3. **Document Aspect Behavior** - Make it clear what aspects affect which code
-4. **Minimize Performance Impact** - Be careful with around advice and complex pointcuts
+4. **MiHaxe/Nimize Performance Impact** - Be careful with around advice and complex pointcuts
 5. **Test Thoroughly** - Ensure aspects don't interfere with business logic
 6. **Consider Alternatives** - Sometimes design patterns or dependency injection suffice
 

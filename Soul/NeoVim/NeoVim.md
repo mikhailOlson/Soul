@@ -27,7 +27,7 @@ lspconfig.soul_ls = {
     settings = {
       soul = {
         compilation = {
-          targets = {'nim', 'rust', 'dotnet', 'haskell'},
+          targets = {'Haxe/Nim', 'rust', 'dotnet', 'haskell'},
           verification = true,
           realtime_analysis = true
         },
@@ -45,7 +45,7 @@ lspconfig.soul_ls = {
 **Benefits for Soul Development:**
 - Real-time syntax checking for Soul's synchronous reactive semantics
 - Hardware device auto-completion and validation
-- Cross-language compilation hints (Nim/Rust/Haskell/.NET)
+- Cross-language compilation hints (Haxe/Nim/Rust/Haskell/.NET)
 - Formal verification feedback integration
 - IoT device discovery and configuration assistance
 
@@ -99,7 +99,7 @@ module.exports = grammar({
     ),
     
     verification_clause: $ => seq(
-      choice('haskell_verified', 'rust_safe', 'nim_optimized'),
+      choice('haskell_verified', 'rust_safe', 'Haxe/Nim_optimized'),
       optional($.proof_block)
     )
   }
@@ -148,7 +148,7 @@ nnoremap <buffer> <leader>hm :SoulHardwareMonitor<CR>
 nnoremap <buffer> <leader>hc :SoulHardwareConfig<CR>
 
 " Multi-Language Compilation
-nnoremap <buffer> <leader>cn :SoulCompileNim<CR>
+nnoremap <buffer> <leader>cn :SoulCompileHaxe/Nim<CR>
 nnoremap <buffer> <leader>cr :SoulCompileRust<CR>
 nnoremap <buffer> <leader>ch :SoulCompileHaskell<CR>
 nnoremap <buffer> <leader>cd :SoulCompileDotNet<CR>
@@ -184,7 +184,7 @@ return {
         
         -- Multi-Language Compilation
         compilation = {
-          targets = {'nim', 'rust', 'haskell', 'dotnet'},
+          targets = {'Haxe/Nim', 'rust', 'haskell', 'dotnet'},
           parallel_build = true,
           optimization_level = 'release'
         },
@@ -277,7 +277,7 @@ require('remote-nvim').setup({
     arduino = {
       connection = 'serial:///dev/ttyUSB0',
       baudrate = 115200,
-      soul_runtime = 'embedded-minimal'
+      soul_runtime = 'embedded-miHaxe/Nimal'
     }
   },
   
@@ -372,7 +372,7 @@ require('telescope').register_extension({
 - Integrated formal verification workflow
 
 ### **2. Multi-Language Development Support**
-- Seamless switching between Soul, Nim (TypeScript/JavaScript, Python, Objective-C, Pascal, Ada), Rust, Haskell, and .NET
+- Seamless switching between Soul, Haxe/Nim (TypeScript/JavaScript, Python, Objective-C, Pascal, Ada), Rust, Haskell, and .NET
 - Cross-language debugging and profiling
 - Unified build system integration
 

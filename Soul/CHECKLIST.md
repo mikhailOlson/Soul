@@ -97,16 +97,16 @@
 - [ ] **AI-Powered Code Generation**
   - [ ] Generate context-aware prompts from JSON instructions
   - [ ] Route to optimal AI model based on complexity and tools
-  - [ ] Implement Nim code generation with hardware awareness
+  - [ ] Implement Haxe/Nim code generation with hardware awareness
   - [ ] Create aspect-oriented code weaving from color mappings
   - [ ] Add automatic error handling and safety checks
   - [ ] Generate documentation and comments from natural language intent and error correction
   - [ ] Implement iterative refinement loops
 
-- [ ] **Nim Integration & Fork Setup**
-  - [ ] Fork `nim-lang/Nim` repository to `soul-lang/nim-soul`
+- [ ] **Haxe/Nim Integration & Fork Setup**
+  - [ ] Fork `Haxe/Nim-lang/Haxe/Nim` repository to `soul-lang/Haxe/Nim-soul`
   - [ ] Add AI-generated code integration points
-  - [ ] Create Soul-specific Nim extensions for AI output
+  - [ ] Create Soul-specific Haxe/Nim extensions for AI output
   - [ ] Implement hardware abstraction layer (HAL)
   - [ ] Add real-time compilation monitoring
 
@@ -172,7 +172,7 @@
   - [ ] Implement parallel compilation for multiple targets
 
 - [ ] **Multi-Target Compilation Pipeline**
-  - [ ] Generate optimized Nim executables
+  - [ ] Generate optimized Haxe/Nim executables
   - [ ] Cross-compile for embedded systems and IoT devices
   - [ ] Create deployment-ready binaries for various platforms
   - [ ] Add performance profiling and optimization suggestions
@@ -191,7 +191,7 @@
 
 #### **5.1 Instant Execution Engine**
 - [ ] **High-Performance Runtime**
-  - [ ] Optimize compiled .nim file execution speed
+  - [ ] Optimize compiled .Haxe/Nim file execution speed
   - [ ] Implement real-time system control capabilities
   - [ ] Create hardware abstraction layer for device control
   - [ ] Add memory-safe concurrent execution
@@ -224,7 +224,7 @@
   - [ ] Implement real-time system code generation
 
 - [ ] **Rust Integration Pipeline**
-  - [ ] Build Nim-to-Rust AI translation layer
+  - [ ] Build Haxe/Nim-to-Rust AI translation layer
   - [ ] Add Cargo integration for dependencies
   - [ ] Create async/await pattern generation
   - [ ] Implement thread-safe hardware access
@@ -421,16 +421,16 @@
 
 ### **Immediate Action Items (Week 1)**
 - [ ] Set up AI model API integrations (Grok 4, Claude 4, Gemini 2.5 Pro)
-- [ ] Fork Nim repository: `git clone https://github.com/nim-lang/Nim.git soul-nim`
+- [ ] Fork Haxe/Nim repository: `git clone https://github.com/Haxe/Nim-lang/Haxe/Nim.git soul-Haxe/Nim`
 - [ ] Create .soul file format specification and parser
-- [ ] Implement basic English-to-Nim AI translation prototype
+- [ ] Implement basic English-to-Haxe/Nim AI translation prototype
 - [ ] Set up MCP server architecture for model selection
 - [ ] Initialize aspect-oriented programming framework
 - [ ] Create color theory integration prototype
 - [ ] Build basic terminological disambiguation system
 
 ### **Sprint 1 Goals (Month 1)**
-- [ ] Working .soul file to Nim AI translation
+- [ ] Working .soul file to Haxe/Nim AI translation
 - [ ] Multi-model AI integration with intelligent routing
 - [ ] Basic natural language hardware control example
 - [ ] Integration with at least one AI model API
@@ -477,7 +477,7 @@
 ## **⚠️ Critical Dependencies**
 
 ### **External Dependencies**
-- [ ] Nim compiler toolchain (latest stable)
+- [ ] Haxe/Nim compiler toolchain (latest stable)
 - [ ] Rust compiler and Cargo ecosystem
 - [ ] GHC Haskell compiler with formal verification tools
 - [ ] .NET Core/5+ runtime and SDK

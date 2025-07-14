@@ -12,7 +12,7 @@ Soul is envisioned as a 'Master Compiler' for high-level programming languages, 
 
 ## Compiler Components
 - **Lexer/Parser**: Interprets Soul's English-led syntax and NLP commands, converting them into a structured abstract syntax tree (AST).
-- **Semantic Analyzer**: Enforces strong static typing and polymorphic behavior, ensuring error minimization before code generation.
+- **Semantic Analyzer**: Enforces strong static typing and polymorphic behavior, ensuring error miHaxe/Nimization before code generation.
 - **AI Integration Module**: Interfaces with external AI APIs (e.g., OpenAI, MindSpace) to translate natural language commands into Soul code or directly into target language snippets. Example: `use ai key 'my-api-key' to 'design robotic arm movement';`
 - **Code Generator**: Maps Soul constructs to target languages. For instance, a Soul `stream` command might generate Rust code for safe concurrency or C code for direct sensor access.
 - **Optimizer**: Applies optimizations specific to the target domain (e.g., energy efficiency for IoT, speed for robotics).
@@ -50,7 +50,7 @@ Soul will interface with Lua for hybrid applications, particularly in platforms 
 - **Shared Data Models**: Soul and Lua share a common data serialization format (e.g., JSON-like structures) for seamless communication.
 
 ## Next Steps
-- Define a minimal viable compiler prototype to translate Soul syntax into C and Rust.
+- Define a miHaxe/Nimal viable compiler prototype to translate Soul syntax into C and Rust.
 - Implement AI API integration for natural language to code translation.
 - Test federation by compiling a single Soul script into multiple target languages for a robotics use case.
 

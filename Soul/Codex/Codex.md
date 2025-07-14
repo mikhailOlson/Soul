@@ -25,7 +25,7 @@ Fork Codex to work with the latest coding models: Grok 4, Claude 4, Gemini 2.5 P
 
 ## Executive Summary
 
-OpenAI Codex OSS transforms Soul from a programming language into a **Universal Programming Orchestrator** — a master compiler that can understand, generate, translate, and optimize code across every programming language, hardware platform, and system architecture. By integrating Codex's natural language understanding with Soul's multi-language architecture (Nim, Rust, Haskell, .NET), Soul becomes the first programming environment capable of **true universal computation** where developers can express intent in natural language and have it materialize as optimized, verified, cross-platform code.
+OpenAI Codex OSS transforms Soul from a programming language into a **Universal Programming Orchestrator** — a master compiler that can understand, generate, translate, and optimize code across every programming language, hardware platform, and system architecture. By integrating Codex's natural language understanding with Soul's multi-language architecture (Haxe/Nim, Rust, Haskell, .NET), Soul becomes the first programming environment capable of **true universal computation** where developers can express intent in natural language and have it materialize as optimized, verified, cross-platform code.
 
 **Key Transformation:**
 - **From**: Language-specific programming with manual translation
@@ -191,7 +191,7 @@ impl SensorFilter {
 ├─────────────────────────────────────────────────────────────┤
 │                 Multi-Language Output Layer                │
 │  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐│
-│  │   Nim   │ │  Rust   │ │ Haskell │ │  .NET   │ │   C++   ││
+│  │   Haxe/Nim   │ │  Rust   │ │ Haskell │ │  .NET   │ │   C++   ││
 │  │TypeScript│ │ Python  │ │   Go    │ │  Swift  │ │  Kotlin ││
 │  └─────────┘ └─────────┘ └─────────┘ └─────────┘ └─────────┘│
 ├─────────────────────────────────────────────────────────────┤
@@ -228,11 +228,11 @@ impl SoulNLProcessor {
 ```
 
 **2. Multi-Target Code Generator**
-```nim
-# soul-codex-bridge/src/multi_target_generator.nim
+```Haxe/Nim
+# soul-codex-bridge/src/multi_target_generator.Haxe/Nim
 type
   TargetLanguage = enum
-    tlNim, tlRust, tlHaskell, tlDotNet, tlTypeScript, tlPython, tlCpp, tlGo
+    tlHaxe/Nim, tlRust, tlHaskell, tlDotNet, tlTypeScript, tlPython, tlCpp, tlGo
   
   CodeGenRequest = object
     soulCode: string
@@ -621,7 +621,7 @@ impl SoulCodexIntegration {
         let codex_client = CodexClient::new(CodexConfig::from_env())?;
         
         let mut language_mappings = HashMap::new();
-        language_mappings.insert("nim".into(), Box::new(NimGenerator::new()));
+        language_mappings.insert("Haxe/Nim".into(), Box::new(Haxe/NimGenerator::new()));
         language_mappings.insert("rust".into(), Box::new(RustGenerator::new()));
         language_mappings.insert("haskell".into(), Box::new(HaskellGenerator::new()));
         language_mappings.insert("dotnet".into(), Box::new(DotNetGenerator::new()));
@@ -642,8 +642,8 @@ impl SoulCodexIntegration {
 ### **Phase 2: Multi-Language Generation (Months 7-12)**
 
 **Advanced Code Generation Pipeline:**
-```nim
-# soul-codex/src/generation_pipeline.nim
+```Haxe/Nim
+# soul-codex/src/generation_pipeline.Haxe/Nim
 type
   GenerationPipeline = ref object
     analyzers: seq[CodeAnalyzer]
